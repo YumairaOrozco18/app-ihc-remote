@@ -1,4 +1,6 @@
 // Función para obtener el último registro de la base de datos de MockAPI
+const lastOrderText = document.getElementById('lastOrderText');
+
 function obtenerUltimaOrden() {
     fetch('https://661384ea53b0d5d80f678f83.mockapi.io/comandos')
         .then(response => response.json())
